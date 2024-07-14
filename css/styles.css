@@ -1,0 +1,646 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #2a3d66;
+    color: white;
+    padding: 2rem 0;
+}
+
+    header .logo img {
+        width: 100px;
+        height: auto;
+        float: left;
+    }
+
+    header nav {
+        float: right;
+    }
+
+        header nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+            header nav ul li {
+                display: inline;
+                margin: 0 1rem;
+            }
+
+                header nav ul li a {
+                    color: white;
+                    text-decoration: none;
+                    font-weight: bold;
+                }
+
+.hero {
+    background-color: #2a3d66;
+    color: white;
+    padding: 3rem 0;
+}
+
+    .hero .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-content {
+    flex: 1;
+    padding-right: 2rem;
+}
+
+    .text-content h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .text-content p {
+        font-size: 1.25rem;
+        margin-bottom: 2rem;
+    }
+
+.buttons .btn {
+    display: inline-block;
+    background-color: #e74c3c;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    margin: 0.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+    .buttons .btn:hover {
+        background-color: #c0392b;
+    }
+
+.image-content {
+    flex: 1;
+    text-align: right;
+}
+
+    .image-content img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+#horarios {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+footer {
+    background-color: #2a3d66;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+    footer .social-media {
+        margin-bottom: 1rem;
+    }
+
+        footer .social-media a {
+            display: inline-block;
+            margin: 0 0.5rem;
+        }
+
+        footer .social-media img {
+            width: 24px;
+            height: auto;
+        }
+
+#contacto {
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+    #contacto h2 {
+        margin-bottom: 20px;
+    }
+
+    #contacto form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    #contacto label {
+        grid-column: 1 / -1;
+    }
+
+    #contacto input,
+    #contacto textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    #contacto button {
+        grid-column: 1 / -1;
+        padding: 10px;
+        background-color: #003366;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+        #contacto button:hover {
+            background-color: #0055cc;
+        }
+
+.address {
+    margin-top: 20px;
+}
+
+.map {
+    margin-top: 20px;
+    text-align: center;
+}
+
+    .map iframe {
+        display: inline-block;
+        width: 100%;
+        max-width: 100%;
+        height: 450px;
+        border: none;
+    }
+
+#servicios {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+    #servicios .servicio {
+        margin-bottom: 2rem;
+    }
+
+    #servicios img {
+        max-width: 100%;
+        height: 15rem;
+        object-fit: cover;
+    }
+
+    #servicios h3 {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+    }
+
+    #servicios p {
+        font-size: 1rem;
+        margin-top: 0.5rem;
+    }
+
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    overflow: hidden;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+    .carousel-item img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 10px 10px 0 0;
+    }
+
+.carousel-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: #000;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    user-select: none;
+}
+
+    .carousel-control-prev:hover, .carousel-control-next:hover {
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+
+.carousel-control-prev {
+    left: 10px;
+}
+
+.carousel-control-next {
+    right: 10px;
+}
+
+#sobre-nosotros {
+    padding: 2rem 0;
+    background-color: #e9f5fb;
+    text-align: center;
+}
+
+    #sobre-nosotros h1 {
+        font-size: 2.5rem;
+        color: #2a3d66;
+        margin-bottom: 1rem;
+    }
+
+    #sobre-nosotros p {
+        font-size: 1.2rem;
+        color: #555;
+        margin-bottom: 2rem;
+    }
+
+#mision-vision-valores {
+    padding: 2rem 0;
+    background-color: #ffffff;
+}
+
+    #mision-vision-valores h2 {
+        font-size: 2rem;
+        color: #2a3d66;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+.mvv-item {
+    margin-bottom: 2rem;
+}
+
+    .mvv-item h3 {
+        font-size: 1.5rem;
+        color: #333;
+        margin-bottom: 0.5rem;
+    }
+
+    .mvv-item p, .mvv-item ul {
+        font-size: 1.1rem;
+        color: #555;
+        line-height: 1.6;
+    }
+
+#nuestro-equipo {
+    padding: 2rem 0;
+    background-color: #e9f5fb;
+}
+
+    #nuestro-equipo h2 {
+        font-size: 2rem;
+        color: #2a3d66;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+.equipo-item {
+    display: inline-block;
+    width: 45%;
+    margin: 2.5%;
+    text-align: center;
+}
+
+    .equipo-item img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-bottom: 1rem;
+    }
+
+    .equipo-item h3 {
+        font-size: 1.25rem;
+        color: #333;
+        margin-bottom: 0.5rem;
+    }
+
+    .equipo-item p {
+        font-size: 1rem;
+        color: #555;
+    }
+
+    /* Estilos para la sección sobre nosotros */
+#sobre-nosotros {
+    background-color: #2a3d66;
+    padding: 2rem;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+}
+
+#sobre-nosotros h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+#sobre-nosotros p {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+/* Estilos para la sección misión, visión y valores */
+#mision-vision-valores {
+    padding: 2rem 1rem;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#mision-vision-valores h2 {
+    margin-bottom: 2rem;
+}
+
+.mvv-item {
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.mvv-item h3 {
+    margin-bottom: 0.5rem;
+}
+
+.mvv-item ul {
+    padding-left: 1.5rem;
+}
+
+/* Estilos para la sección nuestro equipo */
+#nuestro-equipo {
+    padding: 2rem 1rem;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#nuestro-equipo h2 {
+    margin-bottom: 2rem;
+}
+
+.equipo-item {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.equipo-item img {
+    max-width: 150px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.equipo-item h3 {
+    margin-bottom: 0.5rem;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #2a3d66;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .social-media {
+    display: flex;
+}
+
+footer .social-media a img {
+    width: 30px;
+    margin-right: 1rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin: 0.5rem 0;
+    }
+}
+/*------------------sobre nosotros----------------------*/
+/* Estilos para la sección sobre nosotros */
+#sobre-nosotros {
+    background-color: #2a3d66;
+    padding: 2rem;
+    border-radius: 8px;
+    color: white;
+    text-align: left;
+}
+
+    #sobre-nosotros h1 {
+        font-size: 2.5rem;
+        color: #fff;
+        margin-bottom: 1rem;
+    }
+
+    #sobre-nosotros p {
+        font-size: 1.2rem;
+        color: #fff;
+        margin-bottom: 1rem;
+    }
+
+    #sobre-nosotros img {
+        max-width: 30%;
+        height: auto;
+        border-radius: 8px;
+        margin: auto; /* Centra la imagen horizontalmente y verticalmente */
+    }
+
+
+/* Estilos para la sección misión, visión y valores */
+#mision-vision-valores {
+    padding: 2rem 1rem;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+    #mision-vision-valores h2 {
+        margin-bottom: 2rem;
+    }
+
+.mvv-item {
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+    .mvv-item h3 {
+        margin-bottom: 0.5rem;
+    }
+
+    .mvv-item ul {
+        padding-left: 1.5rem;
+    }
+
+/* Estilos para la sección nuestro equipo */
+#nuestro-equipo {
+    padding: 2rem 1rem;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+    #nuestro-equipo h2 {
+        margin-bottom: 2rem;
+    }
+
+.equipo-item {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+    .equipo-item img {
+        max-width: 150px;
+        border-radius: 50%;
+        margin-bottom: 1rem;
+    }
+
+    .equipo-item h3 {
+        margin-bottom: 0.5rem;
+    }
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #2a3d66;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+    footer .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    footer .social-media {
+        display: flex;
+    }
+
+        footer .social-media a img {
+            width: 30px;
+            margin-right: 1rem;
+        }
+
+    footer p {
+        margin: 0;
+    }
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+        header nav ul li {
+            margin: 0.5rem 0;
+        }
+}
+
+/*servicios------------------------*/
+/* Estilos para la sección de servicios */
+#servicios {
+    padding: 2rem 0; /* Relleno superior e inferior */
+}
+
+    #servicios h2 {
+        text-align: center; /* Alinear al centro */
+        margin-bottom: 2rem; /* Margen inferior */
+        font-size: 2rem; /* Tamaño de fuente */
+        color: #333; /* Color del texto */
+    }
+
+.service-item {
+    display: flex; /* Flexbox */
+    align-items: center; /* Alinear al centro */
+    margin-bottom: 2rem; /* Margen inferior */
+    flex-direction: row; /* Dirección de los elementos */
+}
+
+.service-img {
+    width: 30%; /* Ancho de la imagen */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+    .service-img.left {
+        order: 1; /* Orden de la imagen a la izquierda */
+        margin-right: 2rem; /* Margen derecho */
+    }
+
+    .service-img.right {
+        order: 2; /* Orden de la imagen a la derecha */
+        margin-left: 2rem; /* Margen izquierdo */
+    }
+
+.service-description {
+    width: 70%; /* Ancho de la descripción */
+    order: 2; /* Orden de la descripción */
+}
+
+.service-img.right ~ .service-description {
+    order: 1; /* Orden de la descripción cuando la imagen está a la derecha */
+}
+
+.service-description p {
+    font-size: 1.1rem; /* Tamaño de fuente */
+    line-height: 1.5; /* Altura de línea */
+    color: #555; /* Color del texto */
+}

@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Meta tags para definir el juego de caracteres y la vista adaptable -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título de la página -->
+    <title>Contacto - Clínica Fisioterapia Diabetes</title>
+
+    <!-- Enlace a la hoja de estilos CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Encabezado de la página -->
+    <header>
+        <div class="container">
+            <!-- Logo de la clínica -->
+            <div class="logo">
+                <img src="logo.png" alt="Clínica Fisioterapia Diabetes">
+            </div>
+
+            <!-- Barra de navegación -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenido principal de la página -->
+    <main>
+        <!-- Sección de contacto -->
+        <section id="contacto">
+            <div class="container">
+                <h2>Contacto</h2>
+
+                <!-- Formulario de contacto -->
+                <form id="contactForm" action="https://script.google.com/macros/s/1TLIR4mzmbuOw4iD9vN6lhW9s4hyonwqo-c4aOVHQy28/exec" method="POST">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" required></textarea>
+
+                    <button type="submit">Enviar</button>
+                </form>
+
+
+                <!-- Dirección y mapa -->
+                <div class="address">
+                    <h3>Dirección:</h3>
+                    <p>Calle Falsa 123, Ciudad de México, CDMX, México</p>
+                </div>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.696013847671!2d-99.13320848468073!3d19.432607986888834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f92a2d5e1dbf%3A0xc0b7c10b6bcd8a0!2sCalle%20Falsa%20123%2C%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX%2C%20M%C3%A9xico!5e0!3m2!1ses!2sus!4v1620068244104!5m2!1ses!2sus"
+                            width="600"
+                            height="450"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="container">
+            <!-- Enlaces a redes sociales -->
+            <div class="social-media">
+                <a href="https://www.facebook.com/profile.php?id=61562351477358"><img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Facebook_logo_%28square%29.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/diabtherapy?igsh=c29zbXIzYTZndTJw"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png" alt="Instagram"></a>
+            </div>
+
+            <!-- Derechos reservados -->
+            <p>&copy; 2024 Clínica Fisioterapia Diabetes. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
